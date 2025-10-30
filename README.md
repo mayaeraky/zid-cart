@@ -31,7 +31,7 @@ Due to the task scope and time constraint, Models were prioritized based on impo
 
 - Variant model was not of high importance in this task, it did not affect any of the main functionality and added complexity.
 - Coupon model design and features could be better (could add buyX,getY , free shipping,...) but again it did not affect the main functionality and added complexity.
-- Courier and Location models did not seem of high importance given the task requirements, so I decided to move past it.
+- Courier and Location models did not seem of high importance given the task requirements, so I decided to move past them.
 - User model responsible for shop owners, and masteradmins wasn't essential for the task given it didn't implement any dashboard functionality and focused on customers.
 - Meta, Tiktok, etc.. were not essential for this task although very important in e-commerce systems. 
 - Shipping fees were not added based on the decision not to implement courier and location models.
@@ -55,7 +55,7 @@ validations are very critical in e-commerce. validation bugs could lead to negat
 ## Future Considerations
 - Implement caching for frequent queries
 - Add rate-limiting to prevent abuse of coupon endpoints
-- Add models that we couldn't add due to time constraint (courier, location, user...etc)
+- Add models and systems that we couldn't add due to time constraint (courier, location, user...etc)
 - Add soft deletion
 - Include dashboard functionalities.
 - Asynchronous jobs for emails, and under the hood and heavy operations.
