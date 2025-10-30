@@ -44,19 +44,19 @@ Due to the task scope and time constraint, Models were prioritized based on impo
 validations are very critical in e-commerce. validation bugs could lead to negative or inaccurate stock, wrong pricing, and wrong payments, so it was very important to focus on that part either in coupon or purchase validations. It's also important to return validation errors with simple and informative messages for user experience.  
 
 3. ## Testing
-- Used pytest fixtures to create valid purchase scenarios
-- Separate tests for services: payments_service, purchases_service, coupons_service
+- Used pytest fixtures to create valid purchase scenarios.
+- Separate tests for services: payments_service, purchases_service, coupons_service.
 
 4. ## API Decisions
 - Endpoints follow REST conventions: /purchases/, /payments/, /customers/
-- All endpoints return JSON with clear status and error messages
+- All endpoints return JSON with clear status and error messages.
 - Scoping of the queryset was done based on only customers based on the decision of not supporting other users or dashboard functionalities.
 
 ## Future Considerations
-- Implement caching for frequent queries
-- Add rate-limiting to prevent abuse of coupon endpoints
-- Add models and systems that we couldn't add due to time constraint (courier, location, user...etc)
-- Add soft deletion
+- Implement caching for frequent queries.
+- Add rate-limiting to prevent abuse of coupon endpoints.
+- Add models and systems that we couldn't add due to time constraint (courier, location, user...etc).
+- Add soft deletion.
 - Include dashboard functionalities.
 - Asynchronous jobs for emails, and under the hood and heavy operations.
 - Implementing on hold quantity feature to avoid stock issues in case of online payments (product is soldout before the callback is sent). 
